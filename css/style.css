@@ -1,0 +1,282 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Colors used in this project
+
+blue-light: #33C5F3;
+blue-dark: #00A1C2;
+yellow-light: #ECE840;
+yellow-dark: #EEDD24;
+orange-light: #E98941;
+orange-dark: #E46A2F;
+red-light: #E84343;
+red-dark: #4F0505;
+green-light: #8DC63F;
+green-dark: #005735;
+
+*/
+
+/* Custom styles begin here */
+
+body {
+	background-color: #fff;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	color: #4F0505;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	background-color: #E84343;
+	padding: 10px 0px;
+}
+
+header img {
+	float: left;
+	width: 80px;
+	padding: 10px 0;
+	display: block;
+}
+
+nav {
+	float: right;
+}
+
+nav li {
+	display: inline-block;
+	width: auto;
+	text-align: center; /* Aligned text center */
+	padding: 5px; /* Added a small padding all around */
+	margin: 15px 5px; /* Added margin to the top and bottom and a smaller margin to the left and right */
+}
+
+nav a li {
+	color: #fff; /* Changes the font color from default blue to red */
+	font-weight: bold; /* Changes the font weight to bold */
+}
+
+nav a:hover li {
+	border-bottom: 3px solid #00A1C2; /* Shows a underline when hovering over the link */
+}
+
+#hero {
+	background: url('../images/street-tacos.jpg') fixed;
+	background-size: cover;
+	padding: 60px 0px;
+	border-bottom: 2px solid #E84343;
+}
+
+img.hero-taco {
+	width: 80px;
+	margin: 0 auto;
+	padding: 10px;
+	display: block;
+}
+
+#hero h1 {
+	text-align: center;
+	font-size: 72px;
+    font-weight: bold;
+	color: #00A1C2;
+	padding: 10px 0 40px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#menu, #about {
+	padding: 60px 0 40px;
+}
+
+#menu-img {
+	width: 55%;
+	float: left;
+	text-align: center; /* Aligns the image in the center of the div */
+}
+
+#about-img {
+	width: 40%;
+	float: left;
+	text-align: center; /* Aligns the image in the center of the div */
+}
+
+#menu-img p, #about-img p {
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 20px 0;
+}
+
+#menu-content {
+	width: 40%;
+	padding-left: 5%;
+	float: left;
+	line-height: 20px; /* Increases the line spacing in the text */
+}
+
+#about-content {
+	width: 55%;
+	padding-right: 5%;
+	float: left;
+	line-height: 24px; /* Increases the line spacing in the text */
+}
+
+#menu h2, #about h2 {
+	color: #00A1C2;
+	font-size: 34px;
+	font-weight: bold;
+	padding: 20px 0;
+}
+
+#menu-content strong {
+	color: #E84343;
+	font-weight: bold;
+}
+
+#menu-content li {
+	margin-bottom: 10px;
+}
+
+span.price {
+	font-style: italic;
+}
+
+#about p {
+	padding-bottom: 20px;
+}
+
+#divider {
+	background: url('../images/street-tacos-red.jpg') fixed;
+	background-size: cover;
+	padding: 60px 0px;
+}
+
+#divider h3 {
+	text-align: center;
+	font-size: 24px;
+    font-weight: bold;
+	color: #fff;
+	padding: 10px 0;
+}
+
+#back-to-top {
+	padding-bottom: 40px;
+	width: 100px;
+	margin: 0 auto;
+}
+
+#back-to-top img {
+	width: 30px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	display: block;
+}
+
+#back-to-top a {
+	text-align: center;
+	text-decoration: none;
+	color: #E84343;
+}
+
+footer {
+	color: #fff;
+	background: url('../images/street-tacos-blue.jpg') fixed;
+	background-size: cover;
+	background-color: #33C5F3;
+	height: 200px;
+	padding: 40px 0px;
+	border-top: 2px solid #E84343;
+	clear: both;
+}
+
+footer a {
+	text-decoration: underline;
+	color: #fff;
+}
+
+#taco-truck {
+	width: 40%;
+	float: left;
+	text-align: center;
+}
+
+#contact, #credits {
+	width: 30%;
+	float: left;
+	line-height: 20px;
+}
+
+#contact ul, #credits ul {
+	padding: 20px;
+}
+
+#contact li, #credits li {
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+#taco-truck img {
+	padding-top: 30px;
+}
+
+#contact h2, #credits h2 {
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	padding-left: 20px;
+}
+
+#contact strong, #credits strong {
+	color: #fff;
+	font-weight: bold;
+}
